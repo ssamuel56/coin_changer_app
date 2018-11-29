@@ -27,7 +27,7 @@ def coinify_loop(change)
       [change / 25 > 1 ? :Quarters : :Quarter, 25],
       [(change % 25) / 10 > 1 ? :Dimes : :Dime, 10],
       [:Nickel, 5],
-      [((change % 25) - (change % 10)) / 1 > 1  ? :Pennies : :Penny, 1]
+      [((change % 25 % 10 % 5) / 1) > 1  ? :Pennies : :Penny, 1]
     ]
     coins.each do |value|
       if (change / value[1]) >= 1
