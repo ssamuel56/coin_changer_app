@@ -1,12 +1,12 @@
 body {
-  color: black;
+  color: purple;
   text-align: center;
   font-size: 1.8vw;
   width: 80%;
   height: auto;
   margin: auto;
   padding-bottom: 4vw;
-  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%) no-repeat center center fixed;
+  background: linear-gradient(135deg, #cd9cf2 0%, #c3cfe2 100%) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,7 +19,7 @@ h1{
 }
 
 nav {
-  border-bottom: 1vw dotted #c79081;
+  border-bottom: 1vw dotted purple;
   margin-bottom: 2vw;
 }
 
@@ -35,7 +35,7 @@ nav > div > a {
 }
 
 a{
-  color: #dfa579;
+  color: purple;
 }
 
 ul {
@@ -56,6 +56,7 @@ button:hover {
 }
 
 input[type=submit]{
+  color: purple;
   border-style: none;
   background: none;
   font-size: 2vw;
@@ -71,7 +72,7 @@ input[type=number]{
   width: 15vw;
   height: 2vw;
   background: none;
-  border-bottom: .1vw solid black;
+  border-bottom: .1vw solid purple;
   text-align: center;
 }
 
@@ -86,6 +87,11 @@ input[type=number]::-webkit-inner-spin-button {
 
 input[type=number] {
    -moz-appearance: textfield;
+ }
+
+ ul {
+   font-size: 4vw;
+   margin-right: 8vw;
  }
 
 img{
@@ -108,9 +114,10 @@ img:hover {
   width: 50%;
   margin: auto;
   padding-bottom: 3vw;
-  border: .2vw solid #ffbb99;
+  border: .2vw solid #cd9cf2;
   border-radius: 15px;
-  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+box-shadow: 0px 10px linear-gradient(to right, #cd9cf2 0%, #f6f3ff 100%);
+  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
 #hyperlinks > a {
@@ -120,18 +127,56 @@ img:hover {
 
 @media screen and (max-width: 1080px) {
   body{
-    font-size: 3vw;
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 6vw;
+  }
+
+
+  img {
+    max-width: 0%;
+    display: none;
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: 10vw;
+    position: relative;
+    right: 4vw;
   }
 
   nav {
     margin-bottom: 8vw;
   }
 
+  ul {
+    font-size: 7vw;
+  }
+
+  button {
+    font-size: 4vw;
+  }
+
+  input[type=number]{
+    font-size: 5vw;
+    width: 40vw;
+    height: 10vw;
+    border-spacing: 4vw;
+  }
+
+  input[type=submit]{
+    padding-top: 5vw;
+    font-size: 5vw;
+  }
+
+  a {
+    font-size: 5.5vw;
+  }
+
   .main-content {
+    width: 100%;
+    height: 60vw;
     margin-bottom: 8vw;
   }
 

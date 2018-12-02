@@ -7,6 +7,9 @@ end
 
 post '/change' do
 change = params[:change]
+if change.length > 8
+  redirect '/'
+end
 redirect 'coins?change=' + change
 end
 
