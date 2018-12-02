@@ -1,7 +1,7 @@
 body {
   color: black;
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 1.8vw;
   width: 80%;
   height: 100vh;
   margin: auto;
@@ -11,7 +11,7 @@ body {
 }
 
 h1{
-  font-size: 3vw;
+  font-size: 3.4vw;
   position: relative;
   bottom: 1.5vw;
 
@@ -72,8 +72,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 img{
-  width: 7vw;
-  height: 7vw;
+  width: 10vw;
+  height: 10vw;
 }
 
 img:hover {
@@ -97,4 +97,23 @@ img:hover {
 #hyperlinks > a {
   padding-left: .3em;
   padding-right: .3em;
+}
+
+@media screen and (max-width: 1080px) {
+  body{
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  nav {
+    margin-bottom: 8vw;
+  }
+
+  .main-content {
+    margin-bottom: 8vw;
+  }
+
 }
