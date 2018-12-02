@@ -3,9 +3,10 @@ body {
   text-align: center;
   font-size: 1.8vw;
   width: 80%;
-  height: 100vh;
+  height: auto;
   margin: auto;
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  padding-bottom: 4vw;
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%) no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -43,6 +44,17 @@ ul {
   font-size: 2vw;
 }
 
+button {
+  font-size: 2vw;
+  background: none;
+  border-style: none;
+  border-bottom: .4vw solid black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 input[type=submit]{
   border-style: none;
   background: none;
@@ -75,6 +87,8 @@ input[type=number]::-webkit-inner-spin-button {
 img{
   width: 10vw;
   height: 10vw;
+  position: relative;
+  top: 2vw;
 }
 
 img:hover {
@@ -89,7 +103,7 @@ img:hover {
 .main-content {
   width: 50%;
   margin: auto;
-  padding-bottom: 5em;
+  padding-bottom: 3vw;
   border: .2vw solid #ffbb99;
   border-radius: 15px;
   background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
