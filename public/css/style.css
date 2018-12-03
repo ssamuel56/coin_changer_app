@@ -6,7 +6,7 @@ body {
   height: auto;
   margin: auto;
   padding-bottom: 4vw;
-  background: linear-gradient(135deg, #cd9cf2 0%, #c3cfe2 100%) no-repeat center center fixed;
+  background: #c3cfe2 no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -15,7 +15,10 @@ h1{
   font-size: 3.4vw;
   position: relative;
   bottom: 1.5vw;
+}
 
+h1:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -45,13 +48,15 @@ ul {
 }
 
 button {
+  color: purple;
   font-size: 2vw;
   background: none;
   border-style: none;
-  border-bottom: .4vw solid black;
+  border-bottom: .4vw solid purple;
 }
 
 button:hover {
+  color: pink;
   cursor: pointer;
 }
 
